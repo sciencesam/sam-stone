@@ -11,7 +11,7 @@ gem 'turbolinks',   '5.0.0'
 gem 'jbuilder',     '2.4.1'
 
 gem 'bootstrap-sass'
-
+gem 'haml'
 gem 'polymer-rails'
 
 group :development, :test do
