@@ -91,6 +91,7 @@ GEM
       pkg-config (~> 1.1.7)
     nokogumbo (1.4.2)
       nokogiri
+    pg (0.18.4)
     pkg-config (1.1.7)
     polymer-rails (1.2.4.1)
       nokogiri (~> 1.6)
@@ -177,6 +178,7 @@ DEPENDENCIES
   jbuilder (= 2.4.1)
   jquery-rails (= 4.1.1)
   listen (= 3.0.8)
+  pg (= 0.18.4)
   polymer-rails
   puma (= 3.4.0)
   rails (= 5.0.0)
