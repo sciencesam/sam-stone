@@ -1,7 +1,41 @@
+%nav.navbar
+    %ul
+        %li.nav-item.active 
+            %a.nav-link Home
+        %li.nav-item 
+            %a.nav-link Contact
+        %li.nav-item 
+            %a.nav-link Research
 .body.container.center
-    =image_tag "SamStoneLogo.png", :class => "img_fluid"
+    .alert.alert-warning.fade.in
+        Ruby on Rails site in <i>beta</i>
+    =image_tag "SamStoneLogo5.png", :class => "img_fluid"
     %h1 Sam Stone
     %h3 Research, Developement, Design
+    
     %h2 Programming
-    %h2 Electronics
-    %h2 Mechanics
+    %p Check me out on #{ link_to 'Github', 'https://github.com/sciencesam'}
+    %h3 C/C++
+    %h4 Recursion
+    =image_tag "alphabet.JPG", :class => "img-responsive"
+    %p C++ is the first language
+    %h3 Ruby
+    %h4 Rails Web-Apps
+    =image_tag "samstoneorg.JPG", :class => "img-responsive"
+    =image_tag "presto.png", :class => "img-responsive"
+    %p #{ link_to 'Presto', 'https://presto.delivery'} is a webapp I am building 
+    %h3 Python
+    %h4 Computer Vision
+    =image_tag "Campus lk_homo.JPG", :class => "img-responsive"
+    %p (Yes, that is from a drone)
+    %h2 Mechanical Design
+    =image_tag "Blender1.jpg", :class => "img-responsive"
+    =image_tag "blender1.png", :class => "img-responsive"
+    =image_tag "blender2.png", :class => "img-responsive"
+    =image_tag "whitebase.jpg", :class => "img-responsive"
+    =image_tag "modfinass.JPG", :class => "img-responsive"
+    %p I like to pride myself on mechanical detailing
+    %h2 Electrical Design
+    =image_tag "Jacket Circuit.PNG", :class => "img-responsive"
+    =image_tag "Sonic Screwdriver.PNG", :class => "img-responsive"
+    %p I <i>am</i> an Electrical Engineer too!
