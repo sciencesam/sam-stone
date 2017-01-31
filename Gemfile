@@ -10,7 +10,7 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks',   '5.0.0'
 gem 'jbuilder',     '2.4.1'
 
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'haml'
 gem 'polymer-rails'
 
