@@ -10,5 +10,6 @@ class StaticPagesController < ApplicationController
   
   def projects
   end
-  
+  def iot
+  end
 end
