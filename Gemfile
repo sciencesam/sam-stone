@@ -15,6 +15,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'haml'
 gem 'polymer-rails'
 gem 'rest-client'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'
