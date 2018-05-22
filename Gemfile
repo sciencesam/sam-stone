@@ -16,6 +16,9 @@ gem 'haml'
 gem 'polymer-rails'
 gem 'rest-client'
 gem 'nokogiri'
+gem 'simple_form','~> 3.2'
+gem "paperclip","~> 4.1.1"
+gem 'ckeditor','~> 4.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'

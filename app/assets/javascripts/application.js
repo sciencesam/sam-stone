@@ -16,6 +16,7 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+//= require ckeditor/init
 
 $("#toggle").click( function(event){
     event.preventDefault();
