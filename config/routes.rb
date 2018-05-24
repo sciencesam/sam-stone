@@ -26,7 +26,6 @@ Rails.application.routes.draw do
     #get '/post/:id' => :show, as: 'show_post'
     post '/create_post' => :create, as: 'create_post'
   end
-  #root 'posts#index'
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
