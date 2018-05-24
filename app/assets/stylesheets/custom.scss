@@ -53,7 +53,6 @@ li a.active {
 }
 .img-brand {
     max-width:3.5em;
-    margin-top: -10px;
     height: $navbarHeight;
 }
 .card {
@@ -65,6 +64,7 @@ li a.active {
   box-sizing: border-box;
   border-radius: 2px;
   background-clip: padding-box;
+  max-height: 25em;
 }
 .card span.card-title {
     color: gray;
@@ -77,7 +77,7 @@ li a.active {
   position: relative;
   overflow: hidden;
 }
-.card .card-image img {
+.card .card-image {
   border-radius: 2px 2px 0 0;
   background-clip: padding-box;
   position: relative;
@@ -87,10 +87,10 @@ li a.active {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 16px;
+  padding: 10px;
 }
 .card .card-content {
-  padding: 16px;
+  padding: 10px;
   border-radius: 0 0 2px 2px;
   background-clip: padding-box;
   box-sizing: border-box;
@@ -100,7 +100,7 @@ li a.active {
   color: inherit;
 }
 .card .card-content span.card-title {
-  line-height: 36px;
+  line-height: 25px;
 }
 .card .card-action {
   border-top: 1px solid rgba(160, 160, 160, 0.2);

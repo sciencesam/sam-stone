@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   mount Ckeditor::Engine => '/ckeditor'
   #get 'static_pages/home'
   #get 'static_pages/about'
@@ -11,10 +12,21 @@ Rails.application.routes.draw do
   #get 'contact' => 'static_pages#contact', as: 'contact'
   
   #root 'static_pages#home'
-  root to: "posts#index"
+  
+  
+  root "posts#index"
   get 'new' => 'posts#new', as: 'new'
   get 'home' => 'posts#index', as: 'home'
+  get 'projects' => 'posts#projects', as: 'projects'
+  post 'posts/', to: 'posts#create'
   resources :posts
+  
+  controller :posts do
+    #get '/new_post' => :new, as: 'new_post'
+    #get '/post/:id' => :show, as: 'show_post'
+    post '/create_post' => :create, as: 'create_post'
+  end
+  #root 'posts#index'
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
