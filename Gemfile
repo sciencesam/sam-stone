@@ -17,7 +17,7 @@ gem 'haml'
 gem 'rest-client'
 gem 'nokogiri'
 gem 'simple_form','~> 3.2'
-gem "paperclip","~> 4.1.1"
+gem "paperclip"
 gem 'ckeditor','~> 4.1'
 gem 'devise'
 gem 'carrierwave'

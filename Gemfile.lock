@@ -229,7 +229,7 @@ DEPENDENCIES
   listen (= 3.0.8)
   mini_magick
   nokogiri
-  paperclip (~> 4.1.1)
+  paperclip
   pg (= 0.18.4)
   puma (= 3.4.0)
   rails (= 5.0.0)

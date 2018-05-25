@@ -117,3 +117,9 @@ li a.active {
   text-decoration: none;
 }
 
+.crop {
+    max-height: 100%;
+    .img-fluid {
+    height: 20em !important;
+}
+}
