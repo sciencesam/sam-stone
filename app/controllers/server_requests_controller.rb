@@ -3,4 +3,6 @@ class ServerRequestsController < ApplicationController
         if params[:reading].present? && !params[:reading].nil?
             readings = params[:reading]
             #readings = 
+        end 
+    end
 end
