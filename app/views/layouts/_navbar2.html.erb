@@ -3,7 +3,7 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-           <a class="navbar-brand" href="/home">
+           <a class="navbar-brand" href="/">
             <img class = "img-brand" alt="SamStone" src="<%= asset_path("SamStoneIcon.png")%>">
             Sam Stone
           </a>
@@ -11,9 +11,12 @@
         <ul class="navbar-nav navbar-right">
           <li class="nav-item active"><%= link_to 'Home', home_path %></li>
           <li class="nav-item"><%= link_to 'Projects', projects_path %></li>
-          <% if admin_signed_in? %>
+          <% if admin_signed_in? && current_admin.admin? %>
         <!--This block is only visible to signed in admins -->
           <li class='nav-item'><%= link_to 'New Post', new_post_path %></li>
+          <li class='nav-item'><%= link_to 'My Account', edit_admin_registration_path  %></li>
+          <li class='nav-item'><%= link_to 'Logout', destroy_admin_session_path, :method => :delete %></li>
+          <% elsif admin_signed_in? %>
           <li class='nav-item'><%= link_to 'My Account', edit_admin_registration_path  %></li>
           <li class='nav-item'><%= link_to 'Logout', destroy_admin_session_path, :method => :delete %></li>
         <!-- The block ends here -->
