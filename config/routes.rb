@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins, controllers: { registrations: "registrations"}
+  devise_for :admins
   #resources :users, :only => [:show]
   mount Ckeditor::Engine => '/ckeditor'
   #get 'static_pages/home'
