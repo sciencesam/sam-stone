@@ -9,13 +9,18 @@
   </head>
 
   <body>
+    <div id="header">
     <%= render 'layouts/navbar2' %>
+    </div>
+    <div class="container-fluid" id="body">
     
-    
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <div class="container-fluid">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
+    </div>
   </body>
+  <div id="footer">
+    <h6>©Sam Stone <%=Time.current.year%></h6>
+  </div>
 </html>

@@ -18,8 +18,18 @@
           <li class='nav-item'><%= link_to 'Logout', destroy_admin_session_path, :method => :delete %></li>
         <!-- The block ends here -->
         <% else %>
-          <li><%= link_to 'Login', new_admin_session_path  %></li>
+          <li class='nav-item'><%= link_to 'Login', new_admin_session_path  %></li>
         <% end %>
+        <li class='nav-item'>
+          <a class="img-thumbnail" href="https://www.linkedin.com/in/samuel-stone-a28508118/">
+            <img class = "img-brand" alt="Linkedin" src="<%= asset_path("linkedin.jpeg")%>">
+          </a>
+        </li>
+        <li class='nav-item'>
+          <a class="img-thumbnail" href="https://github.com/sciencesam/">
+            <img class = "img-brand" alt="GitHub" src="<%= asset_path("github.png")%>">
+          </a>
+        </li>
         </ul>
       </div>
   </div>
